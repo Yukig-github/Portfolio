@@ -1,0 +1,579 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+	background-color: black;
+}
+li{
+	list-style: none;
+	list-style-type: none;
+}
+
+#main_background{
+	width:100%;
+	height:750px;
+	background-color:black;
+}
+.main_box{
+	display:flex;
+	padding-left: -40px;
+}
+
+.main_box li{
+	width:200px;
+	margin:0px auto 0px auto;
+	height:750px;
+	background-color: aquamarine;
+	opacity: 0;
+	overflow:hidden;
+}
+
+.main_box li img{
+	display:none;
+}
+
+#top{
+	height:750px;
+	background-color:white;
+	width:270px;
+	position:absolute;
+	left:10;
+	opacity:0;
+	z-index:1;
+}
+#port_box{
+	width:230px;
+	height:230px;
+	margin: 30px auto 0px auto;
+	background-color: rgba(150,148,63,.7)	
+}
+
+#top_menu{
+	height:750px;
+	background-color:seagreen;
+	width:100%;
+	position:absolute;
+	left:10;
+	opacity:0;
+	z-index:0;
+	overflow: hidden;
+}
+
+.main_mes{
+	width:100%;
+	height: 100px;
+	background-color:none;
+	color:black;
+	position:absolute;
+	margin-top:300px;
+	z-index: 1;
+}
+
+.main_mes p{
+	font-size:50px;
+	text-align: center;
+	margin:15px 0px 0px 0px;
+	font-family: 'Biryani', sans-serif;
+	
+}
+
+.hide_box1{
+	background-color: white;
+	width:100%;
+	overflow: hidden;
+	position:absolute;
+	right:-100%;
+	height: 375px;
+	z-index:0; 
+
+}
+.hide_box2{
+	background-color: white;
+	width:100%;
+	overflow: hidden;
+	position:absolute;
+	left:-100%;
+	height: 375px;
+	margin-top:375px;
+	z-index:0;
+
+}
+.hide_box3{
+	background-color: white;
+	width:50%;
+	overflow: hidden;
+	position:absolute;
+	left:-100%;
+	height: 750px;
+	z-index:0; 
+}
+.hide_box4{
+	background-color: white;
+	width:50%;
+	overflow: hidden;
+	position:absolute;
+	left:-100%;
+	height: 750px;
+	margin-top:0;
+	z-index:0;
+	
+}
+
+
+.short_prof{
+	width:250px;
+	height:370px;
+	padding-left:0px;
+	margin-top:15px;
+	background-color:white;
+	position:relative;
+	color:dimgray;
+	opacity: 0;
+}
+
+.prof_list{
+	margin-left:0px;
+	font-size:13px;
+	font-family: 'Raleway', sans-serif;
+}
+.prof_list li{
+	margin:9px 0px 0px 0px 
+}
+
+.build_tree{
+	font-family:noto sans "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "sans-serif";
+ 	position: relative;
+  background: white;
+  margin-top: 0px;
+  padding: 2px 0px 0px 14px;
+  font-size: .85rem;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #212529;
+}
+.build_tree ul {
+  padding-left:17px;
+  list-style: none;
+	color:gray;
+}
+.build_tree li{
+	color:gray;
+}
+.build_tree ul li{
+  position: relative;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.build_tree ul li:before{
+	position: absolute;
+  top: 11px;
+  left: 0;
+  width: 10px;
+  height: 1px;
+  margin: auto;
+  content: '';
+  background-color: #666;
+}
+.build_tree ul li:after{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  height: 11px;
+  content: '';
+  background-color: #666;
+}
+.build_treeul li:last-child:after {
+  height: 0px;
+}
+.work{
+	font-size:13px;
+	font-family: 'Raleway', sans-serif;
+}
+.work_a{
+	margin:3px 0px 0px 15px;
+}
+.skill{
+	font-size:13px;
+	font-family: 'Raleway', sans-serif;
+}
+.skill_a{
+	margin:3px 0px 0px 10px;
+}
+.mail{
+	font-size:13px;
+	font-family: 'Raleway', sans-serif;
+}
+.mail_a{
+	margin:3px 0px 0px 10px;
+}
+.space{
+	height: 3000px;
+	background-color: cadetblue;
+	
+}
+
+/* error check
+
+.check_menu{
+	z-index: 2;
+	height: 750px;
+	width:270px;
+	background-color: white;
+	border: solid black 1px;
+}
+.check_top{
+	width: 100%;
+	height: 750px;
+	background-color: lightseagreen;
+	display: flex;
+}
+.c_top_menu{
+	width:270px;
+	height: 750px;
+}
+.c_box_work{
+	background-color:yellowgreen;
+	width:100px;
+	height:100px;
+}
+*/
+
+#content{
+	width:100%;
+	background-color:gray;
+}
+/**************** Nav ************************/
+#nav_box{
+	width:100%;
+	height:50px;
+}
+
+/*** box ***/
+#box_skill{
+	width:100%;
+	height:900px;
+	background-color:darkslategrey;
+}
+#box_work{
+	width:100%;
+	height:2000px;
+	background-color:rgba(111,28,30,1.00);
+}
+#box_profile{
+	width:100%;
+	height:600px;
+	background-color:mediumslateblue;
+}
+#box_contact{
+	width:100%;
+	height:600px;
+	background-color:royalblue;
+}
+
+/***************** Skil *********************/
+#sub_box_skill{
+	width:1200px;
+	display: flex;
+	margin: 0 auto;
+}
+.top_skill{
+	background-color:cornflowerblue;
+	height:900px;
+	margin: 0 0 0 0;
+}
+#box_top_skill{
+	width:250px;
+	height:100px;
+	margin: 255px auto 0 auto;
+	background-color:cornflowerblue;
+}
+#skill_title{
+	color:white;
+	text-align: center;
+	line-height: 100px;
+	font-size: 35px;
+}
+.display_skill{
+	background-color:none;
+	display:flex;
+	margin:0 auto 0 auto;
+}
+.skill_box_1{
+	width:350px;
+	margin:20px 0 0 auto;	
+}
+.skill_box_2{
+	width:400px;
+	margin:20px auto 0 auto;	
+}
+.skill_detail{
+	margin:55px auto 0 0;
+	width:290px;
+	height:100px;
+	display:flex;
+}
+.skill_icon{
+	width:64px;
+	height:64px;
+	margin:auto;
+	background-color:none;
+}
+.skill_content{
+	width:220px;
+	height:100px;
+	color:white;
+	margin-left:10px;
+}
+/**** skill bar ****/
+.skill_name{
+	width:100%;
+}
+.skill_bar_box{
+	width:100%;
+	height:15px;
+	background-color:gray;
+	border:solid 1px none;
+	margin:5px 0 0 0;
+}
+.a{
+	position:absolute;
+	font-size:12px;
+
+}
+
+/*bar1*/
+.skill_bar1{
+	width:0;
+	background-color:darkturquoise;
+	height: 15px;
+}
+.skill_bar_num1{
+	color:white;
+	font-size:11px;
+	width:0;
+}
+.per1{
+	font-size:11px;
+}
+
+/* bar 2*/
+.skill_bar2{
+	width:0;
+	background-color:greenyellow;
+	height: 15px;
+}
+.skill_bar_num2{
+	color:white;
+	font-size:11px;
+	width:0;
+}
+.per2{
+	font-size:11px;
+}
+
+/* bar3 */
+.skill_bar3{
+	width:0;
+	background-color:palegreen;
+	height: 15px;
+}
+.skill_bar_num3{
+	color:white;
+	font-size:11px;
+	width:0;
+}
+.per3{
+	font-size:11px;
+}
+
+/* bar4 */
+.skill_bar4{
+	width:0;
+	background-color:lightgreen;
+	height: 15px;
+}
+.skill_bar_num4{
+	color:white;
+	font-size:11px;
+	width:0;
+}
+.per4{
+	font-size:11px;
+}
+
+/* bar5 */
+.skill_bar5{
+	width:0;
+	background-color:yellowgreen;
+	height: 15px;
+}
+.skill_bar_num5{
+	color:white;
+	font-size:11px;
+	width:0;
+}
+.per5{
+	font-size:11px;
+}
+
+.skill_info{
+	width:100%;
+	font-size:13px;
+}
+
+/******************Work *********************/
+#sub_box_work{
+	display: flex;
+}
+#work_box_content{
+	width:900px;
+	height: 2000px;
+	background-color:gray;
+}
+.work_info{
+	width:700px;
+	margin:50px auto 0px auto;
+	display: flex;
+}
+.work_box_photo{
+	background-color:white;
+	width:300px;
+	height:400px;
+}
+.work_photo{
+	background-color:cadetblue;
+	width:280px;
+	height:380px;
+	margin :10px auto 0 auto;
+}
+.work_detail{
+	width:400px;
+	height:400px;
+	background-color:antiquewhite
+}
+.work_detail_box{
+	width:330px;
+	height:380px;
+	background-color: darkslategray;
+	margin:10px auto 0 auto;
+	
+}
+.w_d_title{
+	margin:10px 0 0 5px;
+	color:white;
+	font-size:20px;
+}
+.w_d_date{
+	margin:12px 0 0 5px;
+	color:white;
+}
+.w_d_skill_box{
+	display:flex;
+}
+.w_d_skill_title{
+	margin-top:12px;
+	margin-left:5px;
+	width:95px;
+	color:white;
+}
+.work_skill_info_box{
+	width:280px;
+	margin:7px 0 0 0;
+}
+.work_skill_info{
+	float:left;
+	border-radius: 10px;
+	border:solid 2px white;
+	background-color: palegreen;
+	color:black;
+	height:16px;
+	padding:2px 5px;
+	width:auto;
+	font-size:12px;
+	margin:6px 0px 0px 6px;
+}
+.w_d_info{
+	width:280px;
+	margin:12px 0px 0px 5px;
+	color:white;
+	width:330px;
+}
+.w_d_info_title{
+	margin:5px 0 0 5px;
+}
+.w_d_info_content{
+	width:330px;
+	word-wrap: normal;
+	margin :0px 0 0 20px;
+	width:280px;
+	word-break: break-all;
+}
+.w_d_link{
+	color:white;
+	font-size:14px;
+	float:right;
+	margin:0 20px 0 0;
+}
+#work_box_title{
+	
+}
+#work_box_string{
+	
+}
+
+/******************* Profile ******************/
+
+
+/******************* footer ******************/
+#footer_box{
+	width:100%;
+	height:50px;
+	background-color: darkslategray;
+}
+
+
+.box{
+	font-size:25px;
+	background-color: white;
+	width:270px;
+	height:40px;
+	border:solid 1px black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
