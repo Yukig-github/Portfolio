@@ -154,13 +154,14 @@ $(function (){
 				},600,motion,function(){
 
 				setTimeout(function(){
-					$('.main_mes')
-						
-						.animate({//to reduce in the name size
+					$('.main_mes').animate({//to reduce in the name size
 						width:'270px'
 						
 					},1000,motion,function(){
 						//to show the top picture
+						$('.top-box').animate({
+							opacity:'1'
+						},1000,motion)
 						$('#top').animate({
 							opacity:'1'
 						},1000,motion,function(){
@@ -239,7 +240,7 @@ $(function (){
 					showProfile();
 				})
 				
-				judge == 1;
+				judge == 3;
 
 							})
 		$('.main_mes').animate({ //1 function
@@ -266,10 +267,11 @@ $(function (){
 									$(this).animate({
 										marginLeft:'0px'
 									},300,motion,function(){
-										if(judge == 1){
+										if(judge >= 3){
 											boxMove().off();
 										}else{
 											boxMove();
+											
 										}
 									})		
 								})
@@ -294,7 +296,29 @@ $(function (){
 
 //skill box
 
+//scroll action
 $(function(){
+	var skill = $('#content'),
+			count = 0,
+			skillTop =skill.offset().top;
+	
+	$(window).scroll(function(){
+		if($(window).scrollTop() >= skillTop){
+			if(count ===0){
+				per1(),
+				per2(),
+				per3(),
+				per4(),
+				per5();
+				count = 2;
+			}
+			
+		}
+	});
+});
+
+
+function per1(){
 	//skill bar for 80 
 	var count = $('.per1'),//80
 			countSpeed = 45;
@@ -326,9 +350,9 @@ $(function(){
         }
         timer();
     });
-});
+}
 
-$(function(){
+function per2(){
 	//skill bar for 70 
 	var count = $('.per2'),//70
 			countSpeed = 50;
@@ -360,9 +384,9 @@ $(function(){
         }
         timer();
     });
-});
+}
 
-$(function(){
+function per3(){
 	//skill bar for 50 
 	var count = $('.per3'),//50
 			countSpeed = 70;
@@ -394,9 +418,9 @@ $(function(){
         }
         timer();
     });
-});
+}
 
-$(function(){
+function per4(){
 	//skill bar for 30 
 	var count = $('.per4'),//30
 			countSpeed = 90;
@@ -442,9 +466,10 @@ $(function(){
             },countSpeed);
         }
         timer();
-    });
+			});
+    }
 	
-	$(function(){
+	function per5(){
 	//skill bar for 20
 	var count = $('.per5'),
 			countSpeed = 120;
@@ -476,9 +501,8 @@ $(function(){
         }
         timer();
     });
-});
+}
 
-});
 
 
 

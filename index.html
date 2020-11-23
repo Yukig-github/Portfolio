@@ -2,9 +2,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
+	
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">	
 <link rel="stylesheet" href="./css/index.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
+		<script src="./js/img.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 	
@@ -16,10 +19,72 @@
 		<div id="main_background">		
 			<div id="top">
 				<div id="port_box">
-				
+					<img src="images/home.png">				
 				</div>
 			</div>
-			<div id="top_menu">
+			<div id="top_menu" style="background-image: url(images/top-img2.jpg);">
+				<div class="blank_top"></div>
+				
+				<div class="top-box" id="top-move">
+					<div class="top-message">
+						PORTFOLIO
+					</div>
+					<div class="top-myInfo">
+						<div class="study-box-all">
+							<div class="title-study">現在勉強中</div>
+							<div class="study-box1">
+								<div class="study-icon">
+									<img src="images/icon/ruby.png">
+								</div>
+								<div class="study-detail">
+									<div class="study-title">Ruby on Rails</div>
+									<div class="study-detail-info">
+										なかなか勉強する機会が今までなかった言語ですが、就職に向けて勉強をスタートしました。
+										早くリファレンスなしで触れるように勉強しています。
+									</div>
+								</div>
+							</div>
+							<div class="study-box2">
+								<div class="study-icon">
+									<img src="images/icon/icon_ts.png">
+								</div>
+								<div class="study-detail">
+									<div class="study-title">TypeScript</div>
+									<div class="study-detail-info">
+										webアプリ開発の技術を身につけるべく勉強しています。現在はリファレンスを見ないと
+										分からないことだらけですが、これから知識を身につけていきます。
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- git instagram school Twitter -->
+						<div class="sns-box">
+
+								<div class="sns-con">
+							
+								</div>
+								<div class="sns-con">
+
+								</div>
+				
+								<div class="sns-con1">
+									<a href=""><img src="images/icon/github.png"></a>
+									
+								</div>
+								<div class="sns-con1">
+									<a href=""><img src="images/icon/instagram.png"></a>
+									
+								</div>
+								<div class="sns-con1">
+									<a href=""><img src="images/icon/twitter.png"></a>
+									
+				
+								</div>
+						</div>
+					</div>
+				
+				</div>
 			</div>
 			
 			
@@ -67,51 +132,71 @@
 			
 			<ul class="main_box">
 				<li class="main_con">
-					<img src="">
+					<img src="images/rand/haruna.jpg">
 				</li>
 				<li class="main_con">
-					<img src="">
-				</li>
-
-				<li class="main_con">
-					<img src="">
+					<img src="images/rand/oku.jpg">
 				</li>
 
 				<li class="main_con">
-					<img src="">
+					<img src="images/rand/name.png">
 				</li>
 
 				<li class="main_con">
-					<img src="">
+					<img src="images/rand/miyu.jpg">
+				</li>
+
+				<li class="main_con">
+					<img src="images/rand/masa.jpg">
 				</li>
 			</ul>
 		</div>
 	</main>
-	<!-- nav -->
-	<div id="nav_box">
-			<ul id="nav">
-				<li class="nav_content"></li>
-			</ul>
-	</div>
+
 	
 	<!-- Contents -->
-	<div id="content">
-		<div id="box_skill">
-			<div id="sub_box_skill">
-				
-				<!-- skill's left box  -->
-					<div class="top_skill">
-						<div id="box_top_skill">
-							<p id="skill_title">SKILL </p>
-						</div>
+	<div id="main_all">
+		
+				<!-- nav -->
+		<div id="nav">
+			<div id="nav_box">
+					<div id ="nav_scroll">
+						Scroll
+					<div id="arrow_box">
 					</div>
-				
+						<div id="arrow">
+						</div>
+				</div>
+				<div id ="nav_top">
+					Top
+					<a href="#top-move">
+						<div id="arrow_box_top">
+					</div>
+					<div id="arrow_top">
+					</div></a>
+					
+					
+				</div>
+		
+				<div id="nav_list_box">
+					<ul id="nav_list">
+						<a href="#content"><li class="nav_content">SKILL</li></a>
+						<a href="#colorchange2"><li class="nav_content2">WORK</li></a>
+						<a href="#colorchange3"><li class="nav_content3">PROFILE</li></a>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div id="content">
+			<!--- Skill --->
+			<div id="box_skill">	
 				<!-- skill's right box -->
-					<div class="display_skill">
+					<div class="display_skill" id="colorchange1">
 						<div class="skill_box_1">
 							<div class="skill_detail">
 								<div class="skill_icon">
-									<img src="images/icon/icon_html.png">						
+									<img src="images/icon/icon_html.png"  >						
 								</div>
 								<div class="skill_content">
 									<div class="skill_name">HTML</div>
@@ -119,7 +204,6 @@
 										<div class="skill_bar1"></div>
 									</div>
 									<div class="skill_bar_num1">
-										<p class="a">&nbsp;</p>
 										<p class="per1">0</p>
 									</div>
 									<div class="skill_info">&nbsp;複雑なWebサイトの構成や、サイトのレスポンシブ対応ができます。</div>
@@ -163,12 +247,12 @@
 								<div class="skill_content">
 									<div class="skill_name">TypeScript</div>
 									<div class="skill_bar_box">
-										<div class="skill_bar3"></div>
+										<div class="skill_bar4"></div>
 									</div>
-									<div class="skill_bar_num3">
-										<p class="per3">0</p>
+									<div class="skill_bar_num4">
+										<p class="per4">0</p>
 									</div>
-									<div class="skill_info">&nbsp;簡単なWebアプリ開発ができます。（修正）</div>
+									<div class="skill_info">&nbsp;簡単なWebアプリ開発ができます。</div>
 								</div>
 							</div>
 							<div class="skill_detail">
@@ -182,6 +266,21 @@
 									</div>
 									<div class="skill_bar_num5">
 										<p class="per5">0</p>
+									</div>
+									<div class="skill_info">&nbsp;基礎的なコードを書くことができます。</div>
+								</div>
+							</div>
+							<div class="skill_detail">
+								<div class="skill_icon">
+									<img src="images/icon/pyhon.png">
+								</div>
+								<div class="skill_content">
+									<div class="skill_name">Python</div>
+									<div class="skill_bar_box">
+										<div class="skill_bar3"></div>
+									</div>
+									<div class="skill_bar_num3">
+										<p class="per3">0</p>
 									</div>
 									<div class="skill_info">&nbsp;簡単なWebアプリ開発ができます。（修正）</div>
 								</div>
@@ -197,10 +296,10 @@
 								<div class="skill_content">
 									<div class="skill_name">Vue.js</div>
 									<div class="skill_bar_box">
-										<div class="skill_bar5"></div>
+										<div class="skill_bar4"></div>
 									</div>
-									<div class="skill_bar_num5">
-										<p class="per5">0</p>
+									<div class="skill_bar_num4">
+										<p class="per4">0</p>
 									</div>
 									<div class="skill_info">&nbsp;簡単なWebチャットアプリの作成ができます。</div>
 								</div>
@@ -232,7 +331,7 @@
 									<div class="skill_bar_num1">
 										<p class="per1">0</p>
 									</div>
-									<div class="skill_info">&nbsp;簡単なWebチャットアプリの作成ができます。</div>
+									<div class="skill_info">&nbsp;基本的な操作ができ、ロゴ・SNS広告の作成をメインで行なっています。</div>
 								</div>
 							</div>
 							<div class="skill_detail">
@@ -247,7 +346,7 @@
 									<div class="skill_bar_num3">
 										<p class="per3">0</p>
 									</div>
-									<div class="skill_info">&nbsp;簡単なWebアプリ開発ができます。（修正）</div>
+									<div class="skill_info">&nbsp;基本的な操作に加え、コラージュ画像を作ることが得意です。</div>
 								</div>
 							</div>
 							<div class="skill_detail">
@@ -262,27 +361,100 @@
 									<div class="skill_bar_num4">
 										<p class="per4">0</p>
 									</div>
-									<div class="skill_info">&nbsp;簡単なWebアプリ開発ができます。（修正）</div>
+									<div class="skill_info">&nbsp;サイトの構築、プラグイン導入、CSS変更等ができます。</div>
 								</div>
 							</div>
 						</div>
 					</div>
+			</div>
+			
+			<!--- Work smoke --->
+			<div class="smoke1">
+				<div class="work_push_box">
+					<div class="close_box"></div>
+					<div class="work_push_main">
+						<div class="work_push1">
+							<img class="size1" src="app image/cloud app/Home.png">
+							<img class="size1" src="app image/cloud app/data.png">
+							<img class="size1" src="app image/cloud app/Server.png">
+						</div>
+						<div class="work_push2">
+							<img class="size1" src="app image/cloud app/login.png">
+							<img class="size1" src="app image/cloud app/pick.png">
+							<img class="size1" src="app image/cloud app/History.png">
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-	
-	<!-------      Work    ---------->
-		<div id="box_work">
-			<div id="sub_box_work">
-				<div id="work_box_content">
+			<!-- 1 -->
+			<div class="popup" id="js-popup">
+				<div class="popup-inner">
+					<div class="close-btn" id="js-close-btn"></div>
+					<a href="#">
+						<div class="work_push_box">
+								<div class="work_push1">
+									<img class="size1" src="app image/cloud app/Home.png">
+									<img class="size1" src="app image/cloud app/data.png">
+								</div>
+								<div class="work_push1">
+									<img class="size1" src="app image/cloud app/login.png">
+									<img class="size1" src="app image/cloud app/Server.png">
+								</div>
+								<div class="work_push2">			
+									<img class="size1" src="app image/cloud app/pick.png">
+									<img class="size1" src="app image/cloud app/History.png">
+								</div>
+						</div>
+					</a>
+				</div>
+				<div class="black-background" id="js-black-bg"></div>
+			</div>
+			
+			<!-- 2 -->
+			<div class="popup" id="js-popup2">
+				<div class="popup-inner">
+					<div class="close-btn" id="js-close-btn2"></div>
+					<a href="#">
+						<div class="work_push_box">
+								<div class="work_push1">
+									<img class="size2" src="yoshimune/Top-1.png">
+									<div class="blank-box"></div>
+								</div>
+								<div class="work_push1">
+									<img class="size2" src="yoshimune/News.png">
+									<img class="size2" src="yoshimune/about-us-1.png">
+								</div>
+								<div class="work_push2">
+									<img class="size3" src="yoshimune/food-menu.png">		
+								</div>
+								<div class="work_push2">
+									<img class="size4" src="yoshimune/shop-info.png">		
+								</div>	
+						</div>
+					</a>
+				</div>
+				<div class="black-background" id="js-black-bg2"></div>
+			</div>
+			
+			<!-- 3 -->
+			
+			<!-- 4 -->
+			
+			<!--  -->
+			
+			<!--- work --->
+			<div class="work_box_content" id="colorchange2">
 					<!---- content --->
 					<div class="work_info">
 						<!-- right box -->
 						<div class="work_box_photo">
-							<div class="work_photo">
-							
+							<div class="work_photo2">
+								<!-- 300px 225px -->
+								<img src="yoshimune/Top-1.png">
 							</div>
 						</div>
+						
+			
 						<!-- left box -->
 						<div class="work_detail">
 							<div class="work_detail_box">
@@ -291,7 +463,7 @@
 								</div>
 								
 								<div class="w_d_date">
-									制作期間：約１ヶ月
+									制作期間：約2週間　〜
 								</div>
 								
 								<div class="w_d_skill_box">
@@ -312,8 +484,101 @@
 										詳細
 									</div>
 									<div class="w_d_info_content">
-											aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-									aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa 							
+											金沢で有名なラーメン屋「吉宗」のWebサイトの改良を行っています。今現在は、店長さんとデザインの決定について話し合っており、デザイン決定次第サイト構築に移っていくつもりです。							
+									</div>								
+								</div>
+								<div class="margin-btn">
+									<button class="margin-btn" id="js-show-popup2">プレビュー</button>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="work_info">
+						<!-- right box -->
+						<div class="work_box_photo">
+							<div class="work_photo">
+								<img src="app image/cloud app/Home-1.png">
+							</div>
+						</div>
+							
+				
+						<!-- left box -->
+						<div class="work_detail">
+							<div class="work_detail_box">
+								<div class="w_d_title">						
+									データ管理アプリのモデル作成
+								</div>
+								
+								<div class="w_d_date">
+									制作期間：３時間
+								</div>
+								
+								<div class="w_d_skill_box">
+									<div class="w_d_skill_title">
+										使用技術：
+									</div>
+									<div class="work_skill_info_box">
+										<div class="work_skill_info">Illustrator</div>
+										<div class="work_skill_info">Photoshop</div>
+										<div class="work_skill_info">UI/UX</div>
+										<div class="work_skill_info">XD</div>
+									</div>
+								</div>
+								
+								<div class="w_d_info">
+									<div class="w_d_info_title">
+										詳細
+									</div>
+									<div class="w_d_info_content">
+											cloud 上でデバイス内のファイルや写真を管理・共有する、仮想アプリのUI/UXを考えました.
+										
+									</div>								
+								</div>
+								<div class="margin-btn">
+									<button class="margin-btn" id="js-show-popup">プレビュー</button>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="work_info">
+						<!-- right box -->
+						<div class="work_box_photo">
+							<div class="work_photo2">
+								<img src="images/lab-top.png">
+							</div>
+						</div>
+						<!-- left box -->
+						<div class="work_detail">
+							<div class="work_detail_box">
+								<div class="w_d_title">						
+									研究室Webサイトの修正
+								</div>
+								
+								<div class="w_d_date">
+									制作期間：約１週間
+								</div>
+								
+								<div class="w_d_skill_box">
+									<div class="w_d_skill_title">
+										使用技術：
+									</div>
+									<div class="work_skill_info_box">
+										<div class="work_skill_info">HTML</div>
+										<div class="work_skill_info">CSS</div>
+										<div class="work_skill_info">UI/UX</div>
+										<div class="work_skill_info">jQuery</div>
+										<div class="work_skill_info">JavaScript</div>
+									</div>
+								</div>
+								
+								<div class="w_d_info">
+									<div class="w_d_info_title">
+										詳細
+									</div>
+									<div class="w_d_info_content">
+											2年前から運用されていなかった研究室のWebサイトの改良を行いました。 							
 									</div>								
 								</div>
 								
@@ -327,19 +592,19 @@
 					<div class="work_info">
 						<!-- right box -->
 						<div class="work_box_photo">
-							<div class="work_photo">
-							
+							<div class="work_photo2">
+								<img src="images/may-top.png">
 							</div>
 						</div>
 						<!-- left box -->
 						<div class="work_detail">
 							<div class="work_detail_box">
 								<div class="w_d_title">						
-									金澤ラーメン吉宗のWebサイト作成
+									架空商品サイトの作成
 								</div>
 								
 								<div class="w_d_date">
-									制作期間：約１ヶ月
+									制作期間：約３週間
 								</div>
 								
 								<div class="w_d_skill_box">
@@ -360,133 +625,84 @@
 										詳細
 									</div>
 									<div class="w_d_info_content">
-											aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-									aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa 							
+										架空商品をもとに、商品紹介を行うWebサイトを授業で作成しました。							
 									</div>								
 								</div>
 								
-								<div class="w_d_link">
+								<div class="w_d_link" id="colorchange3">
 									▶︎プレビュー
 								</div>
 							</div>
 							
-						</div>
+						</div >
 					</div>
-					<div class="work_info">
-						<!-- right box -->
-						<div class="work_box_photo">
-							<div class="work_photo">
-							
-							</div>
-						</div>
-						<!-- left box -->
-						<div class="work_detail">
-							<div class="work_detail_box">
-								<div class="w_d_title">						
-									金澤ラーメン吉宗のWebサイト作成
-								</div>
-								
-								<div class="w_d_date">
-									制作期間：約１ヶ月
-								</div>
-								
-								<div class="w_d_skill_box">
-									<div class="w_d_skill_title">
-										使用技術：
-									</div>
-									<div class="work_skill_info_box">
-										<div class="work_skill_info">HTML</div>
-										<div class="work_skill_info">CSS</div>
-										<div class="work_skill_info">UI/UX</div>
-										<div class="work_skill_info">jQuery</div>
-										<div class="work_skill_info">JavaScript</div>
-									</div>
-								</div>
-								
-								<div class="w_d_info">
-									<div class="w_d_info_title">
-										詳細
-									</div>
-									<div class="w_d_info_content">
-											aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-									aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa 							
-									</div>								
-								</div>
-								
-								<div class="w_d_link">
-									▶︎プレビュー
-								</div>
-							</div>
-							
-						</div>
+				</div>
+			
+			<!--Profile-->
+			<div class="box_profile" >
+				<div id="profile_mine">
+					<div id="profile_photo">
+						<img src="images/profile.png">
 					</div>
-					<div class="work_info">
-						<!-- right box -->
-						<div class="work_box_photo">
-							<div class="work_photo">
-							
-							</div>
-						</div>
-						<!-- left box -->
-						<div class="work_detail">
-							<div class="work_detail_box">
-								<div class="w_d_title">						
-									金澤ラーメン吉宗のWebサイト作成
-								</div>
-								
-								<div class="w_d_date">
-									制作期間：約１ヶ月
-								</div>
-								
-								<div class="w_d_skill_box">
-									<div class="w_d_skill_title">
-										使用技術：
-									</div>
-									<div class="work_skill_info_box">
-										<div class="work_skill_info">HTML</div>
-										<div class="work_skill_info">CSS</div>
-										<div class="work_skill_info">UI/UX</div>
-										<div class="work_skill_info">jQuery</div>
-										<div class="work_skill_info">JavaScript</div>
-									</div>
-								</div>
-								
-								<div class="w_d_info">
-									<div class="w_d_info_title">
-										詳細
-									</div>
-									<div class="w_d_info_content">
-											aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-									aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa 							
-									</div>								
-								</div>
-								
-								<div class="w_d_link">
-									▶︎プレビュー
-								</div>
-							</div>
-							
-						</div>
-					</div>
-				</div>				
-				<div id="work_box_title">
-					<div id="work_box_string">
-						Work
+					<div id="profile_me">
+						<ul>
+							<li id="p_name">福田 湧基</li>
+							<li id="p_job">フロントエンドエンジニア</li>
+							<li id="p_school">金沢工業大学　(在籍中)</li>
+							<li id="p_mail">yuki0000info@gmail.com</li>
+						</ul>
+						
 					</div>
 				</div>
 				
+				<div id="profile_detail">
+					<div class="profile_mes">
+						<div class="profile_title">
+							Message
+						</div>
+						<div class="profile_mes_con">
+							現在はwebアプリエンジニアとしての知識を身につけています。
+							将来は多くの人が利用するような製品・サービスを提供できるエンジニアを目指しています。
+							そのため、日々プログラミング・経営学の勉強を行い、自分常に挑戦できるような環境作りをしています。
+						</div>
+					
+					</div>
+					<div class="profile_mes">
+						<div class="profile_title">
+							Information
+						</div>
+						<div class="profile_info_con">
+							<div class="info_year">2020-2022年</div>
+							<div class="info_school">金沢工業大学 <br>&nbsp;&nbsp;情報フロンティア学部　経営情報学科 へ編入学
+							</div>
+							<div class="info_year">2020年 3月</div>
+							<div class="info_school">国際高等専門学校　グローバル情報学科 を卒業 
+							</div>
+							<div class="info_year">2017-2018</div>
+							<div class="info_school">Otago Polytechnic Engineering and English へ留学
+							</div>
+							<div class="info_year">2015年 4月</div>
+							<div class="info_school">国際高等専門学校　グローバル情報学科 へ入学
+							</div>
+									 
+						</div>
+					</div>
+				
+				</div>
+		
 			</div>
 		</div>
+			
+	</div>
+	
 	
 	<!-------      profile    ---------->
-		<div id="box_profile">
 		
-		</div>
-	<!-------      Contact    ---------->
+	<!-------      Contact    
 		<div id="box_contact">
 		
 		</div>
-	
+	---------->
 	
 	<!---
 	<div class="space">
@@ -508,11 +724,7 @@
 	
 	<footer>
 		<div id="footer_box">
-			<ul>
-				<li>
-					
-				</li>
-			</ul>
+		
 		</div>
 	</footer>
 
